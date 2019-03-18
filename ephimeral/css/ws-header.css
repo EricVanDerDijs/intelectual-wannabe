@@ -1,0 +1,28 @@
+.ws-header {
+  background: #128c7e;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 5px;
+}
+
+.ws-header>.avatar{
+  margin-right: 5px;
+}
+
+.ws-header>.avatar>img{
+  border-radius: 200px;
+  margin-left: -3px;
+  height: 26px;
+}
+
+.ws-header>.name{
+  font-weight: bold;
+}
+
+.ws-header>.actions{
+  flex-grow: 1;
+  text-align: right;
+}
+

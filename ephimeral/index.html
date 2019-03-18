@@ -3,23 +3,83 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ephimeral
-  </title>
+  <title>Ephimeral</title>
+  <!-- material ui icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="./css/loader.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/status-bar.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/ws-header.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/input.css">
 </head>
 <body>
   <div class="ephimeral-container">
     <div class="screen">
-      <div class="status-bar"></div>
 
-      <div class="ws-header"></div>
-      
-      <div class="chat"></div>
-      
-      <div class="input"></div>
+      <!-- <div id="loader">
+        <svg class="spinner" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+        </svg>
+      </div> -->
+
+      <div id="content">
+      <!-- <div id="content" style="display: none"> -->
+        <div class="status-bar">
+            <i class="material-icons">alarm</i>
+
+            <span class="status-text">4G</span>
+            <i class="material-icons">signal_cellular_alt</i>
+            <div class="data-display">
+              <i class="material-icons out arrow">arrow_right_alt</i>
+              <i class="material-icons in arrow">arrow_right_alt</i>
+            </div>
+
+            <i class="material-icons battery-icon">battery_full</i>
+            <span class="status-text battery-percent">97%</span>
+
+            <span id="time" class="status-text">0:00</span>
+        </div>
+  
+        <div class="ws-header">
+          <div class="avatar">  
+            <i class="material-icons">arrow_back</i>
+            <img src="./assets/avatar.png" alt="avatar">
+          </div>
+          <span class="name">Mary Garcia</span>
+          <div class="actions">
+            <i class="material-icons">videocam</i>
+            <i class="material-icons">phone</i>
+            <i class="material-icons">more_vert</i>
+          </div>
+        </div>
+        
+        <div class="chat"></div>
+        
+        <div class="input">
+          <div class="input-field-container">
+            <div class="input-field">
+              <i class="material-icons emojis">tag_faces</i>
+              <div class="text">
+                <p>
+                  It is funny that create something is hard. For example, look how each of these lines are being built, one word after the other, several letters all of them in a specific order to express even the simplest idea. is actually impressive all the time and effort needed to gather the knowledge just tu write these simple lines. And at the end all of this will just
+                </p>
+              </div>
+              <i class="material-icons">camera_alt</i>
+              <div class="attachment-container">
+                <i class="material-icons attachment">attachment</i>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <i class="material-icons mic">mic</i>
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
-  <script src="main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

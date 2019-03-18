@@ -1,0 +1,55 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 22px;
+  padding-right: 5px;
+  border-radius: 6px 6px 0 0;
+  background: #0e7064;
+  color: white;
+}
+
+.status-bar .material-icons {
+  font-size: 15px;
+  color: white;
+  margin-right: 3px; 
+}
+
+.status-bar .status-text {
+  font-size: 13px;
+}
+
+.status-bar .material-icons.battery-icon {
+  margin-right: -2px; 
+}
+
+.status-bar .status-text.battery-percent {
+  margin-right: 3px;
+  font-size: 10px;
+}
+.status-bar .status-text#time {
+  font-weight: bold;
+}
+
+.status-bar .data-display {
+  position: relative;
+  margin-left: -5px;
+  width: 15px;
+  height: 15px;
+}
+
+.status-bar .data-display>.arrow {
+  position: absolute;
+}
+
+.status-bar .data-display>.arrow.in {
+  transform: rotate(90deg) translateY(-3px);
+}
+
+.status-bar .data-display>.arrow.out {
+  transform: rotate(-90deg) translateY(-3px);
+}
+
+.status-bar .data-display>.arrow.disabled {
+  color: rgba(255,255,255,.5);
+}

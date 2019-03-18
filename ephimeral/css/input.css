@@ -1,0 +1,64 @@
+.content {
+  position: relative;
+}
+
+#content>.input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.input>.input-field-container{
+  display: inline-block;
+  width: calc(100% - 39px);
+}
+
+.input>.input-field-container>.input-field {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.input>.button {
+  display: inline-block;
+  background: #128c7e;
+  border-radius: 20px;
+  width: 34px;
+  text-align: center;
+  margin-left: -4px;
+  height: 34px;
+}
+
+.input .material-icons {
+  color: rgba(0,0,0,.6);
+  line-height: 34px;
+  margin-right: 5px; 
+}
+
+.input .material-icons.emojis {
+  margin-left: 5px;
+}
+
+.input .material-icons.attachment {
+  transform: rotate(-135deg);
+  margin: 0;
+}
+.input .attachment-container {
+  margin-right: 5px;
+}
+
+.input .material-icons.mic {
+  margin: 0;
+  color: white;
+}
+
+.input>.input-field-container>.input-field>.text {
+  flex-grow: 1;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 6px 6px 6px 0;
+}
